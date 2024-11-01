@@ -1,0 +1,208 @@
+
+
+/***********************************************************
+* TABBED OPTIONS PAGE
+***********************************************************/
+
+.wep-hidden {
+  display:none;
+}
+
+.wep-options-page-tabbed {
+  min-height:450px;
+  height:auto;
+}
+.wep-options-page-tabbed-nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:15%;
+    z-index: 1;
+    min-width:100px;
+    margin:0 !important;
+  }
+
+.wep-options-submenu-div li {
+    float:left;
+    padding: 0;
+    width:100%;
+    margin:0; !important;
+  }
+.wep-options-submenu-div a {
+  display:block;
+  height:40px;
+  line-height:40px;
+  font-weight:10;
+  padding-left:20px;
+}
+.wep-options-submenu-div a.options-subnav-tab-active,
+.wep-options-submenu-div a.styling-subnav-tab-active{
+  box-shadow: inset 2px 0 0 #1188cc;
+  background-color: #ffffff !important;
+  color: #29324e;
+}
+.wep-options-submenu-div a.options-subnav-tab,
+.wep-options-submenu-div a.styling-subnav-tab{
+  background-color: rgba(224, 224, 224, 0.5);
+}
+.wep-options-submenu-div a:hover {
+  color: #29324e;
+  background-color: rgba(199,199,199, 0.5);
+  box-shadow: inset 2px 0 0 #1188cc;
+ 
+}
+
+.wep-options-submenu-div {
+  float:left;
+  width:100px;
+  border: 1px solid #e5e5e5;
+}
+.wep-options-page-tabbed-content,
+.wep-styling-page-tabbed-content {
+  float:left;
+  width:80%;
+  z-index: 999;
+  background:#fff;
+  margin:0 !important;
+  position:relative;
+  min-height:400px;
+  border: 1px solid #e5e5e5;
+  padding-bottom:5px;
+}
+.wep-option-set,
+.wep-styling-set{
+  width:85%;
+  margin:0 auto;
+  position:relative;
+  left:10px;
+  min-height:400px;
+}
+.wep-options-page-tab-title{
+  margin:15px 0 !important;
+}
+
+.wep-options-page-tabbed p.submit {
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 3px;
+}
+
+@media only screen and (max-width: 650px) {
+  .wep-options-page-tabbed,
+  .wep-styling-page-tabbed{
+    margin:0;
+  }
+  .wep-options-submenu-div {
+  width: 100%;
+}
+.wep-options-page-tabbed-nav{
+  width:100%;
+}
+.wep-options-page-tabbed li{
+  float:none;
+}
+.wep-options-page-tabbed a.styling-subnav-tab{
+  width:25%;
+  float:left;
+  padding:0;
+  text-align:center;
+}
+.wep-options-page-tabbed a.options-subnav-tab-active{
+}
+
+.wep-options-page-tabbed-content,
+.wep-styling-page-tabbed-content{
+  width:100%;
+}
+
+}
+
+/***********************************************************
+FLEXBOX STYLING
+***********************************************************/
+.wep-option-set h3,
+.wep-styling-set h3 {
+  padding-top:10px;
+}
+.wep-options-table th {
+  padding:15px 5px;
+  height:1em;
+}
+
+.wep-options-page-tabbed input[type=text],
+.wep-styling-page-tabbed input[type=text] {
+  width: 90% !important;
+  max-width:130px;
+}
+.wep-options-page-tabbed select,
+.wep-options-page-tabbed textarea
+{
+  width:50% !important;
+}
+
+.wep-styling-page-tabbed select,
+.wep-styling-page-tabbed textarea{
+
+}
+
+.wep-options-div {
+  width:100%;
+}
+.wep-options-div.wep-options-flex {
+  width:100%;
+  display:flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+.wep-subsection{
+margin: 0 10px 10px 0;
+flex-grow:1;
+}
+.wep-subsection-half{
+  width:50%;
+}
+
+.wep-subsection-header{
+margin:3px;
+}
+
+.wep-options-page-tabbed .submit{
+  float:left;
+  margin-top:0;
+}
+.wep-options-page-tabbed .submit input[type=submit]{
+  position:relative;
+ /* left:100px;*/
+}
+
+.wep-subsection-header {
+  font-size:1.2em;
+  font-weight:900;
+  padding: 10px;
+  margin:0;
+  border: 1px solid #e5e5e5;
+  border-bottom:none;
+}
+
+.wep-subsection-content{
+    border: 1px solid #e5e5e5;
+    border-top:none;
+    padding: 10px;
+}
+.wep-subsection-content .wep-option {
+  margin: 8px 0;
+}
+.wep-subsection-content.wep-subsection-full{
+    border: none;
+    padding: 5px;
+}
+
+/*Subsection Rows*/
+.wep-subsection-content .wep-option-label {
+  display:inline;
+}
+.wep-subsection-content .wep-option-checkbox {
+  display:inline;
+}
